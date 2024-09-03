@@ -1,0 +1,101 @@
+﻿<Window x:Class="StartYearThree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StartYearThree"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Border >
+                <Grid Grid.Row="0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Label BorderBrush="Black"
+                           BorderThickness="2"
+                           Content="Расчет комиссионных"
+                           
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top" Margin="360,10,297,0" />
+
+                        <Label  Content="Введите фамилию&#xA;продавца"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="22,18,0,10"
+                            Height="42" />
+
+                        <TextBox x:Name="FName"
+                             Height="30"
+                             Width="130"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             RenderTransformOrigin="1.458,0.416"
+                             Margin="180,30,0,10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Label  Content="Введите дату приема&#xA;Продавца на работу"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="22,10,0,13" Height="47" />
+
+                        <TextBox x:Name="FDate"
+                             Height="30"
+                             Width="130"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             RenderTransformOrigin="1.458,0.416"
+                             Margin="180,18,0,22"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Label  Content="Введите среднюю&#xA;дневную выручку&#xA;продавца"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="22,3,0,10" Width="137"
+                            Height="57" />
+
+                        <TextBox x:Name="Money"
+                             Height="30"
+                             Width="130"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             RenderTransformOrigin="1.458,0.416"
+                             Margin="180,22,0,18"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Button x:Name="ConsiderBTN" Height="41" Width="130"
+                            Background="LightGray"
+                            Content="Рассчитать&#xA;комиссионные"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Margin="524,49,138,50" 
+                            />
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Label Content="Комиссионные продавца:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,58,283,56" />
+                        <TextBox x:Name="FullMoneyEnd" Margin="514,58,158,45" RenderTransformOrigin="0.282,0.189"/>
+                        <TextBox x:Name="FullMoneyEnd_Copy" Margin="662,58,10,45" RenderTransformOrigin="0.282,0.189"/>
+                    </Grid>
+
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" Height="168" VerticalAlignment="Top"/>
+
+        </Grid>
+    </Grid>
+</Window>
