@@ -81,7 +81,7 @@
                         <Button x:Name="ConsiderBTN" Height="41" Width="130"
                             Background="LightGray"
                             Content="Рассчитать&#xA;комиссионные"
-                            HorizontalAlignment="Center" VerticalAlignment="Center" Margin="524,49,138,50" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Margin="524,49,138,50" Click="ConsiderBTN_Click" 
                             />
                     </Grid>
 
